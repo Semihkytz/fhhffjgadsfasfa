@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atatürk Üniversitesi Uygulamalı Eğitimler Asistanı</title>
+    <style>
+        :root {
+            --ata-uni-blue: #1d3557;
+            --accent-blue: #457b9d;
+            --light-bg: #f1faee;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-bg);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 8px solid var(--ata-uni-blue);
+        }
+
+        .header-section h1 {
+            color: var(--ata-uni-blue);
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .header-section p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 30px;
+            text-align: left;
+            font-size: 0.85rem;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 10px;
+            border-left: 4px solid var(--accent-blue);
+            border-radius: 4px;
+        }
+
+        /* Widget Alanı */
+        .ai-widget-wrapper {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="header-section">
+            <h1>Uygulamalı Eğitimler Yapay Zeka Danışmanı</h1>
+            <p>Atatürk Üniversitesi Uygulamalı Eğitimler Yönergesi hakkında tüm sorularınızı bana sesli olarak sorabilirsiniz.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-item">📅 Staj Takvimi ve Süreçler</div>
+            <div class="feature-item">✍️ Uygulama Dosyası Hazırlama</div>
+            <div class="feature-item">💼 İşletme ve Kontenjan Bilgileri</div>
+            <div class="feature-item">⚖️ Hak ve Sorumluluklar (Madde 12)</div>
+        </div>
+
+        <div class="ai-widget-wrapper">
+            <elevenlabs-convai agent-id="agtbrch_8001kcp8m4stekmaaxeq4js02qz7">
+                <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+            </elevenlabs-convai>
+        </div>
+
+        <footer>
+            Atatürk Üniversitesi Uygulamalı Eğitimler Yönergesi (14.01.2022) baz alınmıştır.
+        </footer>
+    </div>
+
+</body>
+</html>
